@@ -497,14 +497,12 @@ button {
     margin-left: -40px;
 }
 
-.footer-send-position {
+.footer-send-form {
     display: flex;
     gap: 24px;
 }
 
-/* .footer-send-lable {
-   margin-right: 24px;
-} */
+
 
 .footer-send-input {
     min-width: 264px;
