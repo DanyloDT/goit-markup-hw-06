@@ -85,8 +85,6 @@ button {
 }
 
  .logo-header {
-    /* display: flex;
-    align-items: center; */
     margin-right: 76px;
 
     color: #4D5AE5;
@@ -144,9 +142,7 @@ button {
     bottom: 0;
     background: #404BBF;
     border-radius: 2px;
-    /* transition-property: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    
 }
 
 .contact-nav  {
@@ -494,8 +490,70 @@ button {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: #31d0aa;
-    
+  
+}
 
+.footer-send {
+    margin-left: -40px;
+}
+
+.footer-send-position {
+    display: flex;
+    gap: 24px;
+}
+
+/* .footer-send-lable {
+   margin-right: 24px;
+} */
+
+.footer-send-input {
+    min-width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+
+    border: 1px solid #FFFFFF;
+    box-shadow:  (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2E2F42;
+}
+.footer-send-input::placeholder {
+    color: #FFFFFF;
+}
+
+.footer-send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+
+
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    background: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    border-color: 1px solid transparent;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
+
+ .footer-send-btn:hover,
+ .footer-send-btn:focus {
+     background: var(--accent-color);
+
+ }
+
+.icon-send {
+    fill: currentColor;
 }
 /* =================== /footer ======================= */
 
@@ -543,8 +601,7 @@ button {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: 1px solid transparent;
-    /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+   
 }
 
 .filters-content {
@@ -581,8 +638,7 @@ button {
 .filters-link:focus {
     
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+   
 }
 
 .filters-thumb {
@@ -612,11 +668,7 @@ button {
 .filters-link:hover .filters-overlay,
 .filters-link:focus .filters-overlay {
     transform: translateY(0);
-    /* transition-duration: 250ms ;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
     
-    
-    /* transition-delay: 200ms; */
 }
 /* =================== /section ===================== */
 
@@ -676,9 +728,8 @@ button {
 }
 
 .modal-btn {
-    
     margin-left: auto;
-
+    margin-bottom: 24px;
     
     display: flex;
     align-items: center;
@@ -690,10 +741,164 @@ button {
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
     color: #2E2F42;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .modal-icon {
     fill: currentColor;
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background: #404BBF;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    ;
+}
+
+.modal-title {
+    display: block;
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: #2E2F42;
+}
+
+.modal-form-field {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    color: #8E8F99;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 38px;
+
+    outline: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+
+.modal-form-input:focus {
+    border: 1px solid #4D5AE5;
+
+}
+
+.modal-form-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 20%;
+
+    pointer-events: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-form-input:focus + .modal-form-icon {
+    fill: #4D5AE5;
+}
+
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    resize: none;
+
+    outline: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message:focus {
+    border: 1px solid #4D5AE5;
+}
+.modal-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-agreement {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    
+    margin-bottom: 24px;
+
+   
+}
+
+.modal-form-checkbox {
+    appearance: none;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23FCFCFC' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.modal-form-checkbox:checked {
+    background-color: #404BBF ;
+    border-color: transparent;
+
+}
+
+
+.modal-form-desc {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    
+    color: #8E8F99;
+
+}
+
+.modal-form-link {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+
